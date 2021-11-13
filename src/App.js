@@ -24,20 +24,20 @@ function App() {
             console.log(err);
           })
         }, (error)=>{
-          switch(error.code) {
-              case error.TIMEOUT:
-                  console.log("A timeout occured! Please try again!");
-                  break;
-              case error.POSITION_UNAVAILABLE:
-                  console.log('We can\'t detect your location. Sorry!');
-                  break;
-              case error.PERMISSION_DENIED:
-                  console.log('Please allow geolocation access for this to work.');
-                  break;
-              case error.UNKNOWN_ERROR:
-                  console.log('An unknown error occured!');
-                  break;
-          }
+          // switch(error.code) {
+          //     case error.TIMEOUT:
+          //         console.log("A timeout occured! Please try again!");
+          //         break;
+          //     case error.POSITION_UNAVAILABLE:
+          //         console.log('We can\'t detect your location. Sorry!');
+          //         break;
+          //     case error.PERMISSION_DENIED:
+          //         console.log('Please allow geolocation access for this to work.');
+          //         break;
+          //     case error.UNKNOWN_ERROR:
+          //         console.log('An unknown error occured!');
+          //         break;
+          // }
         },{
             // 指示浏览器获取高精度的位置，默认为false
             enableHighAccuracy: true,
